@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">        
+        <title>Conversor de Temperatura</title>
+        <script src="script.js" defer></script>
+    </head>
+    <body id="page-landing">
+        <div id="container">
+            <div id="head">
+                <div class="logo-container">
+                    <h1>Conversor de Temperaturas</h1>
+                </div>
+                <div id="buttons">
+                    <label for="temp_in">Converter de:</label>
+                    <select id="escalas_in" name="escalas_in">
+                    <option value="Celsius_in">Celsius</option>
+                    <option value="Fahrenheit_in">Fahrenheit</option>
+                    <option value="Kelvin_in">Kelvin</option>
+                    </select>
+                    <input type="number" id="valor_in" name="valor_in" placeholder="   Digite um número">
+
+                    <label for="temp_out">Para:</label>
+                    <select id="escalas_out" name="escalas_out">
+                    <option value="Celsius_out">Celsius</option>
+                    <option value="Fahrenheit_out">Fahrenheit</option>
+                    <option value="Kelvin_out">Kelvin</option>
+                    </select>
+                    <input type="button" id="button" value="Calcular" onclick="document.getElementById('resp').innerHTML = calculo(v1, t1, t2)"></button>
+                    =
+                    <label id= "resp"></label>
+                </div>
+            </div>
+            <div class="text">
+                <h3>Calor e Temperatura</h3>
+                <p>O Calor é a energia capaz de ser transferida de um corpo para o outro quando existe diferença de temperatura. Podemos definir temperatura como sendo o grau de agitação das moléculas. Quando colocamos diferentes corpos em contato, em diferentes temperaturas, ocorre transferência de energia. O calor flui do corpo de maior temperatura para o de menor temperatura. Após as trocas de calor, quando ambos estão a mesma temperatura, o equilíbrio térmico é atingido.</p>
+
+                <h3>A Escala Celsius</h3>
+                <p>A escala Celsius possui como valor mínimo referencial a temperatura de fusão da água que corresponde a 0°C e o valor máximo referencial o ponto de ebulição da água correspondente a 100°C. Todas as medidas então são feitas em graus Celsius (°C) ou também graus centígrados, pois corresponde a um intervalo de 100 unidades de graus Celsius.</p>
+
+                <h3>A Escala Fahrenheit</h3>
+                <p>A escala Fahrenheit foi proposta por Daniel Gabriel Fahrenheit. Daniel escolheu como ponto zero referencial, a temperatura de congelamento de uma mistura de água e sal e o ponto máximo referencial a temperatura corporal de um ser humano saudável. Desta forma o congelamento da água pura ocorre em 32° Fahrenheit (F) e a ebulição em 212°F.</p>
+
+                <h3>A Escala Kelvin</h3>
+                <p>William Tomson (conhecido como Lord Kelvin) um grande estudioso do comportamento do gases, descobriu o zero absoluto, ou seja, a menor temperatura que a matéria pode chegar. Essa temperatura seria -273.15 °C. Dessa forma, estipulou o ponto zero de sua escala conhecida atualmente como escala Kelvin. A escala Kelvin também é conhecida por escala absoluta, nela a água congela em 273 Kelvin (K) e ferve a 373 K.<br> <h4>OBS: Nessa escala não utilizamos graus, pois esta é a escala absoluta e não uma comparação entre fenômenos físicos como as demais escalas.</h4>
+
+            </div>
+        </div>
+    
+    </body>
+</html>
